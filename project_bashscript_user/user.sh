@@ -47,17 +47,16 @@ read ctusr
 echo $PWD
 cd /home/kali/Desktop
 cd $ctusr 
-echo $PWD
-ls ;;
 #Yine burada da kullanıcının dosya klasörüne giriliyor. Mevcut kullanıcı olduğu için dosya klasörü daha önceden oluşturulmuş
 echo "Enter the name of file"
 read file
 touch $file
 #Mevcut kullanıcı da dosya oluşturma işlemine devam edebiliyor
+echo $PWD
+ls ;;
+#Dosya oluşturulup dizin ve dosya listesi ekrana yazdırılıyor
 
 * )
 echo "Undefined choice!Pls try again..."
 #Kullanıcının tanımlaan caselerden birini girmemesi durumunda hata mesajı veriliyor
 esac
-
-
